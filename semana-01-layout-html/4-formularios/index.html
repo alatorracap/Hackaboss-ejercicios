@@ -7,5 +7,86 @@
     <title>Ejercicio HTML 1</title>
   </head>
 
-  <body></body>
+  <body>
+    <header><h1>Ejercicio Form</h1></header>
+    <main>
+      <section>
+        <h2>Formulario</h2>
+        <form method="get" action="#">
+          <fieldset>
+            <legend>Formulario pero esto es general o como?</legend>
+            <!-- nombre -->
+            <p>
+              <label for="id_name">Nombre: </label>
+              <input type="text" name="name" id="id_name" />
+            </p>
+            <!-- URL -->
+            <p>
+              <label for="id_url">URL: </label>
+              <input type="url" name="url" id="id_url" />
+            </p>
+            <!-- fecha -->
+            <p>
+              <label for="id_fecha">Fecha: </label>
+              <input type="date" name="fecha" id="id_fecha" />
+            </p>
+            <!-- tiempo -->
+            <p>
+              <label for="id_tiempo">Tiempo: </label>
+              <input type="time" name="tiempo" id="id_tiempo" />
+            </p>
+            <!-- fecha y hora -->
+            <p>
+              <label for="id_fechahora">Fecha y hora</label>
+              <input type="datetime-local" name="fechahora" id="id_fechahora" />
+            </p>
+            <!-- mes -->
+            <p>
+              <label for="id_mes">Mes: </label>
+              <input type="month" name="mes" id="id_mes" />
+            </p>
+            <!-- semana -->
+            <p>
+              <label for="id_semana">Semana: </label>
+              <input type="week" name="semana" id="id_semana" />
+            </p>
+            <!-- numero -->
+            <p>
+              <label for="id_numero">Número: </label>
+              <input
+                type="number"
+                name="numero"
+                id="id_numero"
+                min="-10"
+                max="10"
+              />
+            </p>
+            <!-- telefono -->
+            <p>
+              <label for="id_tel">Numero de telefono: </label>
+              <input
+                type="tel"
+                name="telefono"
+                id="id_tel"
+                value="634666666"
+                disabled
+              />
+            </p>
+            <!-- termino de busqueda -->
+            <p>
+              <label for="id_busqueda">Busqueda: </label>
+              <input type="search" name="busqueda" id="id_busqueda" disabled />
+            </p>
+            <!-- color favorito -->
+            <p>
+              <label for="id_color">Color favorito:</label>
+              <input type="color" name="color" id="id_color" />
+            </p>
+          </fieldset>
+          <!-- boton de envio -->
+          <button type="submit">-Enviar-</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
