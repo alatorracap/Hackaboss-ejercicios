@@ -1,0 +1,95 @@
+/* Estilos generales */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header principal */
+
+body > header {
+  background-color: steelblue;
+  padding: 2rem;
+}
+
+body > header h1 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+body > header nav a {
+  background-color: white;
+  color: steelblue;
+  padding: 0.5rem;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body > main {
+  padding: 2rem;
+}
+
+/* Lista de noticias */
+
+ul.lista-noticias {
+  list-style: none;
+}
+
+ul.lista-noticias li {
+  margin-bottom: 1.5rem;
+}
+
+ul.lista-noticias li h2 {
+  margin-bottom: 0.5rem;
+  color: steelblue;
+  border-bottom: 2px solid steelblue;
+  padding: 0.25rem;
+}
+
+/* Formulario */
+
+form legend {
+  background-color: steelblue;
+  padding: 0.5rem;
+  color: white;
+  margin: 1rem auto;
+  font-weight: bold;
+}
+
+form fieldset {
+  border: 0;
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  padding: 0.5rem 0;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  border-bottom: 2px solid steelblue;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+form textarea {
+  height: 8rem;
+}
+
+form button {
+  border: 0;
+  background-color: steelblue;
+  color: white;
+  padding: 0.5rem;
+}
