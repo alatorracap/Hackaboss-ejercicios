@@ -8,11 +8,11 @@
   </head>
   <body>
     <header>
-      <h1></h1>
+      <h1>Debrable</h1>
       <nav>
         <a href="#peliculas">Mi top 10 peliculas</a>
         <a href="#viajeJapon">Mi viaje a Japón</a>
-        <a href="mensaje">Mandame un mensaje</a>
+        <a href="#mensaje">Mandame un mensaje</a>
       </nav>
     </header>
     <main>
@@ -32,7 +32,6 @@
           <li>Coco</li>
         </ol>
       </section>
-
       <!-- viaje -->
       <section id="viajeJapon">
         <h2>Mi viaje a Japon</h2>
@@ -72,16 +71,40 @@
           hendrerit gravida rutrum quisque.
         </p>
       </section>
-      <!-- mensaje -->
 
-      <form action="" id="mensaje">
+      <aside>
+        <header>
+          <h2>
+            <img
+              src="./88668387-female-avatar-profile-vector-illustration.webp"
+              alt="foto de perfil"
+              height="150"
+            />
+          </h2>
+          <h2>Debra Smith</h2>
+          <p>
+            Aqui deberia ir una descripcion pero no se me ocurre nada por el
+            momento
+          </p>
+          <address>
+            <a href="mailto:debrasmith@example.com">debrasmith@example.com</a>
+          </address>
+        </header>
+      </aside>
+
+      <!-- mensaje -->
+      <form action="get" id="mensaje">
         <fieldset>
           <p>
             <!-- nombre -->
             <label for="idName">Nombre: </label>
             <input type="text" name="name" id="idName" />
             <!-- email -->
+            <label for="idEmail">Email: </label>
+            <input type="email" name="email" id="idEmail" />
             <!-- fecha de nacimiento -->
+            <label for="idFecha">Fecha de Nacimiento: </label>
+            <input type="date" name="fecha" id="idFecha" />
           </p>
           <p>
             <label for="idComment">Comentarios: </label>
@@ -92,9 +115,14 @@
               value="Escribe aqui todo lo que quieras"
             />
           </p>
+
+          <input type="checkbox" name="sub" id="idSub" />
+          <label for="idSub">Subscribirse al newsletter</label>
+
+          <button type="button">Enviar</button>
         </fieldset>
       </form>
     </main>
-    <footer></footer>
+    <footer>Terminos y condiciones | Politica de privacidad</footer>
   </body>
 </html>
