@@ -1,0 +1,9 @@
+body {
+  text-align: center;
+  background-image: url('http://source.unsplash.com/random?hamburger');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+form {
+  background-color: #ffffff90;
+}

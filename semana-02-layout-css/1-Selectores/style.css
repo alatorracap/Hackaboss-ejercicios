@@ -1,0 +1,63 @@
+* {
+  font-family: sans-serif;
+}
+header,
+head,
+h1 {
+  color: white;
+  background-color: cornflowerblue;
+  text-align: center;
+  padding-top: 0;
+}
+
+h2 {
+  color: cornflowerblue;
+}
+
+/* material lists */
+ul {
+  list-style-type: circle;
+}
+
+li {
+  padding-top: 1rem;
+}
+
+.importante {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* table items */
+table {
+  width: 500px;
+  table-layout: fixed;
+}
+
+tr:nth-child(odd) {
+  background-color: #d8e6fe;
+}
+tr:nth-child(even) {
+  background-color: #9bc9f8;
+}
+
+th {
+  background-color: #9bc9f860;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+td {
+  padding: 20px;
+}
+/* table title */
+thead th {
+  background-color: #679ae9 !important;
+  color: white;
+  height: 10px;
+}
+
+#descanso {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}

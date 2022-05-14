@@ -1,0 +1,58 @@
+@import url(https://unpkg.com/emoji.css/dist/emoji.min.css);
+
+/* Haz que el último li tenga fondo azul.
+ Especifica ese fondo azul usando valores RGB
+ */
+li:last-child {
+  background-color: rgb(120, 176, 225);
+}
+
+/* Haz que los li impares 
+tengan el texto subrayado.
+ Haz que el subrayado sea de color verde. */
+
+li:nth-child(odd) {
+  text-decoration: underline rgb(77, 175, 66);
+}
+
+/* Haz que todos los elementos de la 
+ lista aparezcan en una sola línea en
+  lugar de unos debajo de otros y que 
+  tengan una separación de 10 píxeles 
+  entre unos y otros.
+ */
+
+ul li {
+  display: inline;
+}
+
+/* Haz que al final de cada li aparezca un emoji 
+diferente sin modificar el html.
+ */
+ul:first-child::after {
+  content: '🐱​​';
+}
+ul:nth-child(2)::after {
+  content: '🐯​';
+}
+
+/* Haz que el li que tiene texto en inglés
+  tenga el tipo de letra del doble de tamaño que 
+  los otros y en mayúsculas.*/
+
+[lang='en'] {
+  font-size: 200%;
+  text-transform: uppercase;
+}
+/* 
+2da lista:
+-En lugar de tener puntos a la izquierda de los 
+elementos tenga números romanos. 
+-Excepto "A Coruña" que no debe tener número 
+romano a la izquierda.
+ */
+/* COMO???? */
+ul:nth-child(2) {
+  background-color: pink; /*for debbuging*/
+  list-style-type: upper-roman !important;
+}

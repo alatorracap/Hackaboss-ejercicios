@@ -8,5 +8,74 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body></body>
+  <body>
+    <main>
+      <section>
+        <form action="GET">
+          <!-- fielset 1: personalizar hamburguesa -->
+          <fieldset class="">
+            <h1>Personaliza tu hamburguesa</h1>
+
+            <h2>Ingredientes</h2>
+
+            <!-- Ingredientes -->
+            <p>
+              <label for="quesito">Queso</label>
+              <input type="checkbox" name="quesito" id="quesito" value="1" />
+
+              <label for="pimiento">Pimiento</label>
+              <input type="checkbox" name="pimiento" id="pimiento" value="2" />
+
+              <label for="cebolla">Cebolla</label>
+              <input type="checkbox" name="cebolla" id="cebolla" value="3" />
+
+              <label for="jamon">Jamón</label>
+              <input type="checkbox" name="jamon" id="jamon" value="4" />
+
+              <label for="huevo">Huevo</label>
+              <input type="checkbox" name="huevo" id="huevo" value="5" />
+            </p>
+
+            <!-- Tamaño -->
+            <h2>Tamaño</h2>
+            <p>
+              <label for="peq">Pequeña</label>
+              <input type="radio" name="tamano" id="peq" value="peq" />
+              <label for="med">Mediana</label>
+              <input type="radio" name="tamano" id="med" value="med" />
+              <label for="gra">Grande</label>
+              <input type="radio" name="tamano" id="gra" value="gra" />
+            </p>
+          </fieldset>
+
+          <!-- fielset 2: datoos de la entrega -->
+          <fieldset>
+            <h1>Datos de entrega</h1>
+            <p><label for="nombre">Nombre</label></p>
+            <p><input type="text" name="nombre" id="nombre" required /></p>
+            <p><label for="direccion">Dirección</label></p>
+            <p>
+              <input type="text" name="direccion" id="direccion" required />
+            </p>
+            <p><label for="telefono">Teléfono</label></p>
+            <p><input type="tel" name="telefono" id="telefono" required /></p>
+            <p><label for="instrucciones">Instrucciones</label></p>
+            <p><input type="text" name="Instrucciones" id="Instrucciones" /></p>
+          </fieldset>
+
+          <!-- fielset 3: metodode pago -->
+          <fieldset>
+            <h1>Método de pago</h1>
+            <select name="pago" id="pago" required>
+              <option value="credito">Tarjeta de crédito</option>
+              <option value="efectivo">Efectivo</option>
+              <option value="cupon">Cupón</option>
+            </select>
+          </fieldset>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
