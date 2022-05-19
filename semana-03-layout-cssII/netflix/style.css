@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dosis:wght@300&family=Roboto:wght@700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('./img/fondo.jpg');
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  background: (0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 200px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+}
