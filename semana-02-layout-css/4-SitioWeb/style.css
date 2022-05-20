@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro&display=swap');
+
+footer {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-color: aquamarine;
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+body a {
+  text-decoration: none;
+  color: #e766ff;
+}
+/* header */
+
+header nav {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  gap: 3em;
+  font-size: 20px;
+}
+
+/* index main */
+.index main {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+section h1 {
+  text-align: center;
+  font-family: 'Macondo', cursive;
+  font-weight: bold;
+}
+h2 {
+  text-align: center;
+}
+.proyectos h2 {
+  text-align: left;
+}
+.personalInfo {
+  text-align: center;
+}
+img {
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px;
+}
+
+/* contact.html */
+body.contact {
+  display: flex;
+  /* justify-content: center; */
+  margin: 0px auto;
+}
+body.contact main {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 100vh;
+}
+body.contact h1 {
+  text-align: center;
+}
+body.contact main section p,
+body.contact main section address {
+  margin: 0px;
+  /* debbug */
+  /* background-color: blue; */
+}
+header {
+  display: flex;
+  padding: 2%;
+  align-items: flex-start;
+  justify-content: center;
+}
+/* proyectos */
+main.proyectos {
+  display: flex;
+  height: 100vh;
+}
+ul {
+  display: flex;
+  list-style: none;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  align-content: stretch;
+  padding: 0px;
+}
+main.proyectos h1 {
+  justify-content: center;
+}
+li {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.link-list {
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+ul.link-list li {
+  border: none;
+}

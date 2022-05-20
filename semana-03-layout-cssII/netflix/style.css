@@ -1,18 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dosis:wght@300&family=Roboto:wght@700&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-}
 
 body {
-  background-image: url('./img/fondo.jpg');
-  color: white;
+  /* background-image: url('./img/fondo.jpg'); */
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0) 75%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url('./img/fondo.jpg') no-repeat;
   font-family: 'Roboto', sans-serif;
-  background: (0, 0, 0, 0.4);
+  background: (0, 0, 0, 0.4) black;
   display: flex;
   flex-direction: column;
+  margin: 0px auto;
+  color: white;
 }
 
+/* logo  */
 img {
   width: 200px;
 }
@@ -20,10 +26,57 @@ img {
 header {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+}
+.header2 {
+  display: flex;
+  flex-direction: row;
 }
 
 button {
   background-color: red;
-  border-radius: 10px;
   color: white;
+  height: 3rem;
+  width: 90px;
+  border: none;
+  border-radius: 5px;
+}
+
+.sign {
+  width: 5rem;
+  margin: 2rem;
+}
+
+select {
+  background-color: #00000050;
+  color: white;
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+select::before {
+  content: '🌐';
+}
+
+/* descripcion y email */
+main {
+  align-self: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+form.email input {
+  width: 80%;
+  height: 3rem;
+}
+
+@media (max-width: 600px) {
+  form.email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
