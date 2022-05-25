@@ -34,7 +34,7 @@ header h1 {
 
 main {
   grid-area: main;
-  /* seguro toca camiarlo despues */
+  /* seguro toca cambiarlo despues */
   min-height: 90vh;
   display: flex;
   flex-wrap: wrap;
@@ -49,6 +49,10 @@ footer {
   justify-content: center;
   gap: 2rem;
 }
+
+/* 
+  respponsive to bigger size
+*/
 
 @media (min-width: 100px) {
   body nav {

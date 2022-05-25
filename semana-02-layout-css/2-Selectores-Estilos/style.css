@@ -22,7 +22,7 @@ li:nth-child(odd) {
   entre unos y otros.
  */
 
-ul li {
+ul.lista li {
   display: inline;
 }
 
@@ -52,7 +52,8 @@ elementos tenga números romanos.
 romano a la izquierda.
  */
 /* COMO???? */
-ul:nth-child(2) {
+
+ul#provincias li:not(:nth-child()) {
   background-color: pink; /*for debbuging*/
-  list-style-type: upper-roman !important;
+  list-style-type: upper-roman;
 }
