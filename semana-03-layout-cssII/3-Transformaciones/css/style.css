@@ -11,37 +11,41 @@ body {
 section {
   display: flex;
 }
-#box1 {
-  background-color: red;
+.content {
+  position: relative;
+  height: 200px;
+  width: 200px;
+}
+.content div {
   height: 100px;
   width: 100px;
-  transition: all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  transition: transform 1s;
+}
+#box1 {
+  background-color: red;
   transform-origin: left top;
-  transition-duration: 1s;
 }
 #box2 {
   background-color: yellow;
-  height: 100px;
-  width: 100px;
-  transition: all;
   transform-origin: right top;
-  transition-duration: 1s;
+  top: 0;
+  left: 100px;
 }
 #box3 {
   background-color: blue;
-  height: 100px;
-  width: 100px;
-  transition: all;
   transform-origin: left bottom;
-  transition-duration: 1s;
+  top: 100px;
+  left: 0;
 }
 #box4 {
   background-color: green;
-  height: 100px;
-  width: 100px;
-  transition: all;
   transform-origin: right bottom;
-  transition-duration: 1s;
+  top: 100px;
+  left: 100px;
 }
 /* hola in the middle */
 #text {
@@ -53,20 +57,11 @@ section {
 }
 /* hovers */
 
-
-#box1:hover {
+.content:hover #box1,
+.content:hover #box4 {
   transform: rotate(90deg);
 }
-#box2:hover {
+.content:hover #box2,
+.content:hover #box3 {
   transform: rotate(-90deg);
-}
-#box3:hover {
-  transform: rotate(-90deg);
-}
-#box4:hover {
-  transform: rotate(90deg);
-}
-
-.content:hover {
-  
 }
