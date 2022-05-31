@@ -1,0 +1,41 @@
+/* #################
+ * ## Ejercicio 1 ##
+ * #################
+ *
+ * Dada la siguiente API, obtén un array con el nombre de todos los municipios de la
+ * provincia de Lugo.
+ *
+ * Además, el nombre de los municipios debe estar ordenado por orden alfabético inverso.
+ *
+ * - Resuélvelo con async / await.
+ *
+ * API: https://www.el-tiempo.net/api
+ *
+ */
+
+
+/**
+ * #################
+ * ## Ejercicio 2 ##
+ * #################
+ *
+ * Obtener un array con las series de las 5 primeras páginas
+ *
+ * API: https://www.episodate.com/api
+ *
+ */
+
+
+/**
+ * #################
+ * ## Ejercicio 3 ##
+ * #################
+ *
+ * Obtener un array con los todos personajes. Debe existir la posibilidad de filtrar por "status" y
+ * por "species".
+ *
+ * ¡No utilizar el método filter!
+ *
+ * API: https://rickandmortyapi.com/
+ *
+ */

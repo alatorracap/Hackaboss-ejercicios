@@ -1,0 +1,152 @@
+/**
+ * #################
+ * ## Ejercicio 1 ##
+ * #################
+ *
+ * Escribe un programa que permita al usuario introducir elementos en un array.
+ * El programa finalizará cuando el usuario introduzca el string "fin", y se
+ * mostrará por consola el contenido del array.
+ *
+ */
+ 
+ /**
+ * #################
+ * ## Ejercicio 2 ##
+ * #################
+ *
+ * Dado el array [3, 4, 13, 5, 6, 8], muestra por consola qué numeros son pares
+ * y qué números son impares.
+ *
+ * Haz lo mismo pero en este caso indica qué números son primos y cuales no.
+ *
+ * Por último, crea un nuevo array en el que los valores sean el doble del array
+ * original.
+ *
+ */
+ 
+ /**
+ * #################
+ * ## Ejercicio 3 ##
+ * #################
+ *
+ * Hemos visto como podemos recorrer automáticamente un array empleando el bloque
+ * for y la propiedad nombreArray.length. Pues de igual modo que recorremos arrays
+ * es posible recorrer strings utilizando ese mismo método.
+ *
+ * Tomemos como referencia el string "JavaScript mola mucho". En este ejercicio
+ * deberás mostrar por consola el número total de caracteres que tiene este string
+ * SIN CONTAR los espacios. El resultado debería ser 19 para el string anterior.
+ *
+ */
+ 
+/* #################
+ * ## Ejercicio 4 ##
+ * #################
+ *
+ * - Crea el objeto coche y asígnale las propiedades modelo, marca y color.
+ *
+ * - Muestra el objeto por medio de un "console.log".
+ *
+ * - Modifica el valor de la propiedad color y agrega la propiedad año de
+ *   matriculación.
+ *
+ * - Utiliza un "confirm" para mostrar por consola las propiedades, o los
+ *   valores. Si la persona acepta el "confirm" se mostrarán las propiedades,
+ *   de lo contrario, se mostrarán los valores.
+ *
+ */
+ 
+
+/**
+ * #################
+ * ## Ejercicio 5 ##
+ * #################
+ *
+ * Crea una función que reciba una cadena de texto y la muestre poniendo
+ * el signo – entre cada carácter sin usar el método replace ni replaceAll.
+ *
+ * Por ejemplo, si tecleo "hola qué tal", deberá salir "h-o-l-a- -q-u-e- -t-a-l".
+ *
+ */
+ 
+
+/**
+ * #################
+ * ## Ejercicio 6 ##
+ * #################
+ *
+ * Crea una función que interprete el contenido entre paréntisis de
+ * un string dado.
+ *
+ *      - El programa debe devolver el texto rodeando por paréntisis.
+ *
+ *      - Si no hay paréntisis se devolverá un string vacío.
+ *
+ *      - Si existe paréntisis de apertura pero no de cierre se devolverá
+ *        el contenido desde el primer paréntisis hasta el final del string.
+ *
+ *      - Si existe paréntisis de cierre pero no de apertura se devolverá
+ *        el contenido desde el inicio hasta el paréntisis de cierre.
+ *
+ * Por ejemplo, si el string fuera "Hola (que) tal" se mostrará el "que".
+ *
+ * Si fuera "Hola (que tal" se devolvería "que tal".
+ *
+ */
+
+
+/**
+ * #################
+ * ## Ejercicio 7 ##
+ * #################
+ *
+ * Crea una función que pida una cadena de texto y la devuelva al revés.
+ * Es decir, si tecleo "hola que tal" deberá mostrar "lat euq aloh".
+ *
+ */
+ 
+
+/* #################
+ * ## Ejercicio 8 ##
+ * #################
+ *
+ * Crea un programa que compruebe si un string es palíndromo, es decir, que se lee igual
+ * del derecho que del revés. Por ejemplo, "Arriba la birra" es un palíndromo.
+ *
+ */
+ 
+
+/* #################
+ * ## Ejercicio 9 ##
+ * #################
+ *
+ * - Cuenta el número de letras "r" en el siguiente fragmento de texto:
+ *   "Tres tristes tigres tragan trigo en un trigal."
+ *
+ * - Ahora cuenta las "t". Debes contar las mayúsculas y las minúsculas.
+ *
+ * - Sustituye todas las "e" por "i".
+ *
+ */
+ 
+ 
+/**
+ * #################
+ * ## Ejercicio 10 #
+ * #################
+ *
+ * Dado un array de frutas, genera un nuevo objeto en el que cada fruta pase a ser una
+ * nueva propiedad del objeto. El valor asignado a esta propiedad debe ser el nº de veces
+ * que la fruta se repite en el array.
+ *
+ *      const fruitBasket = ['naranja', 'naranja', 'limón', 'pera', 'limón', 'plátano', 'naranja'];
+ *
+ * Para el array anterior, el objeto resultante debería ser:
+ *
+ *      const fruits = {
+ *          naranja: 3,
+ *          limón: 2,
+ *          pera: 1,
+ *          plátano: 1
+ *      };
+ */

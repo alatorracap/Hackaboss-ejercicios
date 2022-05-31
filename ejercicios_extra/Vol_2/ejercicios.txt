@@ -1,0 +1,150 @@
+/**
+ * #################
+ * ## Ejercicio 1 ##
+ * #################
+ *
+ * Crea una función que imprima X resultados aleatorios de una
+ * quiniela 1 X 2. Ejemplo, si le decimos que imprima 14 resultados:
+ *
+ *      Resultado 1: 1
+ *      Resultado 2: X
+ *      Resultado 3: 2
+ *      (...)
+ *      Resultado 14: 2
+ *
+ */
+
+
+/**
+ * #################
+ * ## Ejercicio 1-B ##
+ * #################
+ *
+ * Crea una función que imprima X resultados aleatorios de una
+ * quiniela 1 X 2 con la probabilidad de que salga el 1 sea del 60%, la de la X del 30% y la del 2 del 10%
+ * Ejemplo, si le decimos que imprima 14 resultados:
+ *      Resultado 1: 1
+ *      Resultado 2: X
+ *      Resultado 3: 2
+ *      (...)
+ *      Resultado 14: 2
+ *
+ */
+
+
+
+/**
+ * #################
+ * ## Ejercicio 2 ##
+ * #################
+ *
+ * Realizar un algoritmo que calcule el valor de la letra de un número de DNI (Documento nacional de indentidad).
+ *
+ * Buscar en Google como se genera la letra del DNI.
+ *
+ * Usad funciones para una mejor organización del código.
+ */
+
+
+/* ################
+ * ## Pirámide 1 ##
+ * ################
+ *
+ * Utiliza el bucle "for" para crear las siguiente figura con asteriscos (*). Debe existir
+ * una variable que permita modificar la altura de la pirámide. Para el ejemplo expuesto a
+ * continuación se ha tomado como referencia una altura de 4:
+ *
+ * - Figura 1:
+ *
+ *      😁
+ *      😁😁
+ *      😁😁😁
+ *      😁😁😁😁
+ */
+ 
+ 
+ /**
+ * ################
+ * ## Pirámide 2 ##
+ * ################
+ *
+ * Crea una función que reciba una altura y dibuje una figura
+ * como la que sigue:
+ *
+ *    1
+ *    22
+ *    333
+ *    4444
+ *    55555
+ *
+ */
+ 
+ /**
+ * ################
+ * ## Pirámide 3 ##
+ * ################
+ *
+ * Crea una función que reciba una altura y dibuje una figura
+ * como la que sigue:
+ *
+ *    1
+ *    12
+ *    123
+ *    1234
+ *    12345
+ *
+ */
+ 
+ 
+ /* ################
+ * ## Pirámide 4 ##
+ * ################
+ *
+ * Utiliza el bucle "for" para crear las siguiente figura con asteriscos (*). Debe existir
+ * una variable que permita modificar la altura de la pirámide. Para el ejemplo expuesto a
+ * continuación se ha tomado como referencia una altura de 4:
+ *
+ * - Figura:
+ *
+ *        *
+ *       **
+ *      ***
+ *     ****
+ */
+
+
+/* ################
+ * ## Pirámide 5 ##
+ * ################
+ *
+ * Utiliza el bucle "for" para crear las siguiente figura con asteriscos (*). Debe existir una
+ * variable que permita modificar la altura de la pirámide. Para el ejemplo expuesto a
+ * continuación se ha tomado como referencia una altura de 4:
+ *
+ * - Figura:
+ *
+ *        *
+ *       ***
+ *      *****
+ *     *******
+ */
+ 
+ 
+ /* ################
+ * ## Pirámide 6 ##
+ * ################
+ *
+ * Utiliza el bucle "for" para crear las siguiente figura con asteriscos (*). Debe existir una
+ * variable que permita modificar la altura de la pirámide. Para el ejemplo expuesto a
+ * continuación se ha tomado como referencia una altura de 4:
+ *
+ * - Figura:
+ *
+ *        *
+ *       ***
+ *      *****
+ *     *******
+ *      *****
+ *       ***
+ *        *
+ */
