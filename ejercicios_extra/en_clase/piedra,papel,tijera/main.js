@@ -46,6 +46,6 @@ while ((userPoints < 3 && pcPoints != 3) || (userPoints != 3 && pcPoints < 3)) {
     //si el input del jugador no es valido
     console.log('esa opcion no existe, elige una que');
   }
-
+//disp
   console.log(`Player:${userPoints}|Pc: ${pcPoints}`);
 }
