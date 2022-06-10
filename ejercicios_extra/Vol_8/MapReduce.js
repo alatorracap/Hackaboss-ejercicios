@@ -148,3 +148,87 @@ const cars = [
     model: "Uno",
   },
 ];
+//
+//- 1. Obtén la suma total de todas las edades de las personas.
+//
+console.log("#1- Suma de las edades");
+let ageTotal = persons.reduce((total, person) => {
+  return (total += person.age);
+}, 0);
+console.log("Total: ", ageTotal);
+//
+// - 2. Obtén la suma total de todas las edades de las personas francesas.
+//
+console.log("#2- Suma de las edades de las personas francesas");
+let theFrench = persons.filter((person) => {
+  return person.country === "FR";
+});
+theFrench = theFrench.reduce((total, person) => {
+  return (total += person.age);
+}, 0);
+console.log("Total: ", theFrench);
+//
+// 3. Obtén un array con el nombre de todas las mascotas.
+//
+console.log("#3- Nombre de mascotas");
+const pets = persons.map((owner) => {
+  return owner.pet.name;
+});
+console.log("Mascotas:", pets);
+//
+// *  - 4. Obtén un array con las personas que tengan gato.
+//
+console.log("#4-Los Cat Lovers");
+let catLovers = persons.filter((owner) => {
+  return owner.pet.type === "gato";
+});
+console.log("Los cat lovers son:", catLovers);
+//
+// *  - 5. Obtén un array con los coches de los españoles.
+//
+console.log("#5-Carros de los Españoles: ");
+let cochesES = persons.filter((esp) => {
+  return esp.country === "ES";
+});
+cochesES = cochesES.map((coche) => {
+  return coche.car;
+});
+console.log("Los Españoles tienen los siguientes coches: ", cochesES);
+//
+// *  - 6. Obtén un array con las personas que tengan un coche de la marca Ford.
+//
+console.log("#6-Personas con Ford: ");
+
+//filtra los coches para solo tener esos de marca ford
+let fordIds = cars.filter((item) => {
+  return item.brand === "Ford";
+});
+//limpia el resto de valores y solo deja el id
+fordIds = fordIds.map((item) => {
+  return item.id;
+});
+//transforma el objeto a JSON stringify para poder haccer una comparacion con .includes()
+fordIds = JSON.stringify(fordIds);
+/*
+Debbug purposes
+ console.log(fordIds);
+console.log(persons.length);
+ */
+
+let filteredFord = persons.filter((item) => {
+  return fordIds.includes(item.car);
+});
+console.log(filteredFord);
+// *  - 7. ¡Bonus point! Obtén un array con todas las personas en el que cada persona tenga toda
+//          la info de su coche
+/* 
+            noot noot
+                    \|
+                        __
+                     -=(o '.
+                        '.-.\
+                        /|  \\
+                        '|  ||
+                         _\_):,_
+
+*/
