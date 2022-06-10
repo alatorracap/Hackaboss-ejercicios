@@ -14,3 +14,14 @@
  *  - Muestra por consola el tipo de las variables definidas.
  *
  */
+
+let myName = "Aleja";
+let number = 14;
+
+console.log(`Mi nombre es ${myName} y mi numero favorito es ${number}`);
+
+number = Math.round(Math.random() * 666);
+
+console.log(`Mi nombre es ${myName} y mi nuevo numero favorito es ${number}`);
+console.log("La variable Nombre es un ", typeof myName);
+console.log("La variable numero es un ", typeof number);

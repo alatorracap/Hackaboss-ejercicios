@@ -11,3 +11,8 @@
  *  - Muestra el resultado de elevar A a la potencia de B.
  *
  */
+
+const numA = 8;
+const numB = 2;
+
+console.log("suma de A + B = ", numA + numB);
