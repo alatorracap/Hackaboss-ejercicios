@@ -6,6 +6,7 @@
 
 function alarma(timer, beep) {
   for (let i = 1; i < timer; i++) {
+    let inter = setInterval(() => {});
     setTimeout(function () {
       if (i % beep === 0) {
         console.log("ALARMA a los", i, "segundos");
