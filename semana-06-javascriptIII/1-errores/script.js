@@ -71,10 +71,11 @@ function dniVerifier(dni) {
     }
     // console.log(typeof dni.slice(0, 8));
     //3- La primera parte (antes del guion) son 8 números.
-    if (dni.indexOf("-") !== 8) {
+    if (dni.indexOf("-") !== 8 || isNaN(dni.split(0, 7))) {
       myError = new Error("La primera parte deben ser 8 numeros");
       throw myError;
     }
+
     // 4- La segunda parte (después del guion) es un único caracter y no es un número.
     if (dni.charAt(9) === "[0-9]") {
       myError = new Error(
