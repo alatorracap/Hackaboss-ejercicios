@@ -45,11 +45,11 @@ let inter = setInterval(() => {
 
   //aumenta el tiempo transcurrido
   //se eliminara al crear los botones
-  i++;
+  //i++;
   //esto igual
-  if (i === 5) {
-    clearInterval(inter);
-  }
+  // if (i === 5) {
+  //   clearInterval(inter);
+  // }
 }, 1000);
 
 //crea interaction para detener el shuffle
