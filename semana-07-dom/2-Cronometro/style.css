@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+body {
+  background-color: rgb(213, 96, 239);
+  display: grid;
+  justify-items: center;
+}
+
+body > section {
+  font-family: "Special Elite", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body > section > h1 {
+  font-family: "Special Elite", cursive;
+}
+p {
+  font-size: 100px;
+  font-family: "Special Elite", cursive;
+}
+button {
+  height: 50px;
+  width: 50%;
+  justify-content: center;
+}

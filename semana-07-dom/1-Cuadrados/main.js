@@ -15,6 +15,7 @@ const newSquare = document.getElementById("newSquare");
 //llama el boton que detiene la disco (detiene el interval)
 const stopB = document.getElementById("stopB");
 
+//* funcion que busca el numero random para el rgb
 function randomColor() {
   let value = 0;
   value = Math.floor(Math.random() * 255);
@@ -42,19 +43,11 @@ let inter = setInterval(() => {
     //selecciona el div correspondiente en el loop
     d.style.backgroundColor = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
   }
-
-  //aumenta el tiempo transcurrido
-  //se eliminara al crear los botones
-  //i++;
-  //esto igual
-  // if (i === 5) {
-  //   clearInterval(inter);
-  // }
 }, 1000);
 
 //crea interaction para detener el shuffle
-/* 
-IMPORTANTE!!
+/*  
+!IMPORTANTE!!
 en el html tuve que mover el script tag al final poque sino daba un error con el event listener
  */
 stopB.addEventListener("click", () => {
