@@ -1,0 +1,22 @@
+# Ejercicio node 1
+
+- Crea una base de datos en tu servidor MySQL con el nombre que quieras.
+- Crea un proyecto de node con un archivo initDB.js que al ejecutarse cree las siguientes tablas en la base de datos con sus campos y tipos correspondientes usando SQL:
+  - users
+    - id (number)
+    - email (text)
+    - name (text)
+    - registration_date (datetime)
+    - active (boolean)
+  - photos
+    - id (number)
+    - user_id (number)
+    - photo_file_name (text)
+    - creation_date (datetime)
+  - likes
+    - id (number)
+    - user_id (number)
+    - photo_id (number)
+    - creation_date (datetime)
+- Establece las relaciones entre las tablas que consideres necesarias usando SQL
+- Antes de crear estas tablas el programa de node debe borrar cualquier otra tabla con el mismo nombre pre-existente en la base de datos.

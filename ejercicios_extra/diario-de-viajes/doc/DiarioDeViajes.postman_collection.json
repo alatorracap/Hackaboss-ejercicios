@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "30e60baf-2918-466f-9c95-dd9ac078e435",
+		"name": "DiarioDeViajesClase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "enties",
+			"item": [
+				{
+					"name": "listEntries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:{{port}}/entries",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"entries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listEntriesConQueryParams",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:{{port}}/entries?search=lugo&order=place&direction=DESC",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"entries"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "lugo"
+								},
+								{
+									"key": "order",
+									"value": "place"
+								},
+								{
+									"key": "direction",
+									"value": "DESC"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEntry",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/entries/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"entries",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editEntry",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "2",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"place\": \"New\",\n    \"description\": \"New description\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/entries/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"entries",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "newEntry",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "2",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "place",
+									"value": "Lugo",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "Ciudad de Galicia ...",
+									"type": "default"
+								},
+								{
+									"key": "file1",
+									"type": "file",
+									"src": "/home/stefano/bootcamps/JSB09RT_recursos/JSB09RT/tutorias/19072022_practica/semana-11-node/Ejercicio2/img.jpg"
+								},
+								{
+									"key": "file2",
+									"type": "file",
+									"src": "/home/stefano/bootcamps/JSB09RT_recursos/JSB09RT/tutorias/19072022_practica/semana-11-node/Ejercicio2/img.jpg"
+								},
+								{
+									"key": "file3",
+									"type": "file",
+									"src": "/home/stefano/bootcamps/JSB09RT_recursos/JSB09RT/tutorias/19072022_practica/semana-11-node/Ejercicio2/img.jpg"
+								},
+								{
+									"key": "file4",
+									"type": "file",
+									"src": "/home/stefano/bootcamps/JSB09RT_recursos/JSB09RT/tutorias/19072022_practica/semana-11-node/Ejercicio2/img.jpg",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:{{port}}/entries",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"entries"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "newUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
